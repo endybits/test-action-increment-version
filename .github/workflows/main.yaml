@@ -1,0 +1,16 @@
+name: Testing my Versioning Custom Action
+on:
+- push
+
+jobs:
+  get_test_version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - id: get-version
+        uses: endybits/increment-version@v1
+        with:
+          type-versioning: 'major'
+      - id: version
+        run: echo random-version ${{ steps.get-version.outputs.random-version}}
+        shell: bash
