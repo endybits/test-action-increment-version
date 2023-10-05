@@ -12,5 +12,5 @@ jobs:
         with:
           type-versioning: 'major'
       - id: version
-        run: echo random-version ${{ steps.get-version.outputs.random-version}}
+        run: echo random-version ${{ steps.get-version.outputs.new-version}}
         shell: bash
