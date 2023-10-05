@@ -14,3 +14,6 @@ jobs:
       - id: version
         run: echo random-version ${{ steps.get-version.outputs.new-version}}
         shell: bash
+      - id: default-version
+        run: echo random-version ${{ steps.get-version.outputs.default-version}}
+        shell: bash
