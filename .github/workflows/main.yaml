@@ -10,7 +10,7 @@ jobs:
       - id: get-version
         uses: endybits/increment-version@v1.6
         with:
-          type-versioning: 'major'
+          type-versioning: 'minor'
       - id: version
         run: echo random-version ${{ steps.get-version.outputs.new-version}}
         shell: bash
