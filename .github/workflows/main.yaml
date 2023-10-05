@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: get-version
-        uses: endybits/increment-version@v1.13
+        uses: endybits/increment-version@v1.14
         with:
           type-versioning: 'minor'
       - id: version
