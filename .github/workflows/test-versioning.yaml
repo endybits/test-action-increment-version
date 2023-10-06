@@ -5,9 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to test versioning
     steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
+      - name: checkout
+        uses: actions/checkout@v2
       - name: versioning
         id: versioning_id
         uses: endybits/versioning@v0.6.2
