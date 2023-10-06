@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  versioning_job:
+    runs-on: ubuntu-latest
+    name: A job to test versioning
+    steps:
+      - name: Hello world
+        id: hello_id
+        uses: endybits/versioning@v0.5.0
+        with:
+          who-to-greet: "Endy B"
+      # Use the output from the `hello_id` step
+      - name: Get output
+        run: echo "The time when you was connected was ${{ steps.hello_id.time}}"
