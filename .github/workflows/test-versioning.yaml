@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world
         id: hello_id
-        uses: endybits/versioning@v0.5.2
+        uses: endybits/versioning@v0.5.3
         with:
           who-to-greet: "Endy B"
       # Use the output from the `hello_id` step
