@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: versioning
         id: versioning_id
-        uses: endybits/versioning@v0.6.0
+        uses: endybits/versioning@v0.6.1
         with:
           versioning-type: "major"
       # Use the output from the `versioning_id` step
