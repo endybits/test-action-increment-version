@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v2
       - name: versioning
         id: versioning_id
-        uses: endybits/versioning@v0.7.7
+        uses: endybits/versioning@v0.7.8
         with:
           versioning-type: "patch"
       # Use the output from the `versioning_id` step
