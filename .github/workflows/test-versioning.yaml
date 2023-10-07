@@ -11,7 +11,7 @@ jobs:
         id: versioning_id
         uses: endybits/versioning@v0.7.8
         with:
-          versioning-type: "patch"
+          versioning-type: "minor"
       # Use the output from the `versioning_id` step
       - name: Get version
         run: echo "The new version is ${{ steps.versioning_id.outputs.new_version_tag}}"
